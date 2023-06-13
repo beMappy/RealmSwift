@@ -102872,910 +102872,910 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
       "kind": "BooleanLiteral",
       "offset": 4674,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
       "kind": "BooleanLiteral",
       "offset": 5374,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Impl\/BasicTypes.swift",
       "kind": "BooleanLiteral",
       "offset": 6082,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Error.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Error.swift",
       "kind": "StringLiteral",
       "offset": 1486,
       "length": 13,
       "value": "\"Call failed\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Events.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Events.swift",
       "kind": "StringLiteral",
       "offset": 10345,
       "length": 8,
       "value": "\"events\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Events.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Events.swift",
       "kind": "StringLiteral",
       "offset": 11415,
       "length": 8,
       "value": "\"events\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/List.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/List.swift",
       "kind": "IntegerLiteral",
       "offset": 10627,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/List.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/List.swift",
       "kind": "IntegerLiteral",
       "offset": 11283,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Map.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Map.swift",
       "kind": "BooleanLiteral",
       "offset": 11793,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Map.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Map.swift",
       "kind": "BooleanLiteral",
       "offset": 12575,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "IntegerLiteral",
       "offset": 3909,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "Array",
       "offset": 3967,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 6856,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 6923,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "Array",
       "offset": 7887,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 7934,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 8001,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 9103,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 9168,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 21678,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/MongoClient.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/MongoClient.swift",
       "kind": "BooleanLiteral",
       "offset": 22794,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/ObjectId.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/ObjectId.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 8,
       "value": "\"RealmSwift.ObjectId\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Optional.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Optional.swift",
       "kind": "StringLiteral",
       "offset": 1746,
       "length": 13,
       "value": "\"RealmSwift.RealmOptional\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/PersistedProperty.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/PersistedProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 18149,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/PersistedProperty.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/PersistedProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 18172,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/PersistedProperty.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/PersistedProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 18491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/PersistedProperty.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/PersistedProperty.swift",
       "kind": "BooleanLiteral",
       "offset": 18514,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Projection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Projection.swift",
       "kind": "Array",
       "offset": 29973,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Projection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Projection.swift",
       "kind": "IntegerLiteral",
       "offset": 34793,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "IntegerLiteral",
       "offset": 1101,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "IntegerLiteral",
       "offset": 1212,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "BooleanLiteral",
       "offset": 2977,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "BooleanLiteral",
       "offset": 27171,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "BooleanLiteral",
       "offset": 27716,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 28234,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 28629,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 29070,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 29471,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 29857,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 30252,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 30632,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 31033,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 31423,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "Array",
       "offset": 31834,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35438,
       "length": 4,
       "value": "\"||\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35462,
       "length": 4,
       "value": "\"&&\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35488,
       "length": 4,
       "value": "\"==\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35517,
       "length": 4,
       "value": "\"!=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35546,
       "length": 3,
       "value": "\"<\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35579,
       "length": 4,
       "value": "\"<=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35611,
       "length": 3,
       "value": "\">\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35647,
       "length": 4,
       "value": "\">=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35672,
       "length": 4,
       "value": "\"IN\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35701,
       "length": 10,
       "value": "\"CONTAINS\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35738,
       "length": 12,
       "value": "\"BEGINSWITH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35775,
       "length": 10,
       "value": "\"ENDSWITH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35806,
       "length": 6,
       "value": "\"LIKE\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35438,
       "length": 4,
       "value": "\"||\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35462,
       "length": 4,
       "value": "\"&&\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35488,
       "length": 4,
       "value": "\"==\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35517,
       "length": 4,
       "value": "\"!=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35546,
       "length": 3,
       "value": "\"<\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35579,
       "length": 4,
       "value": "\"<=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35611,
       "length": 3,
       "value": "\">\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35647,
       "length": 4,
       "value": "\">=\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35672,
       "length": 4,
       "value": "\"IN\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35701,
       "length": 10,
       "value": "\"CONTAINS\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35738,
       "length": 12,
       "value": "\"BEGINSWITH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35775,
       "length": 10,
       "value": "\"ENDSWITH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "StringLiteral",
       "offset": 35806,
       "length": 6,
       "value": "\"LIKE\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "IntegerLiteral",
       "offset": 36299,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "IntegerLiteral",
       "offset": 39778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Query.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Query.swift",
       "kind": "IntegerLiteral",
       "offset": 39835,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "Array",
       "offset": 12521,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "Array",
       "offset": 15754,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "BooleanLiteral",
       "offset": 21972,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 23855,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24416,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24778,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 23855,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24416,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24778,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 23855,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24416,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "IntegerLiteral",
       "offset": 24778,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "StringLiteral",
       "offset": 52563,
       "length": 31,
       "value": "\"RLMRealmDidChangeNotification\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "StringLiteral",
       "offset": 53266,
       "length": 37,
       "value": "\"RLMRealmRefreshRequiredNotification\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "StringLiteral",
       "offset": 52563,
       "length": 31,
       "value": "\"RLMRealmDidChangeNotification\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Realm.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Realm.swift",
       "kind": "StringLiteral",
       "offset": 53266,
       "length": 37,
       "value": "\"RLMRealmRefreshRequiredNotification\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 34689,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 38806,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 39639,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 40638,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 41581,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 66374,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 4185,
       "length": 15,
       "value": "\"default.realm\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4429,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 4480,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 8232,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8322,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 9479,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 13147,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 13490,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/RealmKeyedCollection.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/RealmKeyedCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 20688,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SortDescriptor.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SortDescriptor.swift",
       "kind": "BooleanLiteral",
       "offset": 1833,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SortDescriptor.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SortDescriptor.swift",
       "kind": "BooleanLiteral",
       "offset": 2275,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "StringLiteral",
       "offset": 3969,
       "length": 10,
       "value": "\"RealmSwift.SwiftUIKVO\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "BooleanLiteral",
       "offset": 10158,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "StringLiteral",
       "offset": 10879,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 26646,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "StringLiteral",
       "offset": 25777,
       "length": 7,
       "value": "\"RealmSwift.Storage\""
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 28557,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 29026,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 31210,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 33066,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 34829,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 36513,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 38107,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 39790,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "Array",
       "offset": 41431,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SwiftUI.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SwiftUI.swift",
       "kind": "BooleanLiteral",
       "offset": 61427,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Sync.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Sync.swift",
       "kind": "BooleanLiteral",
       "offset": 30256,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Sync.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Sync.swift",
       "kind": "BooleanLiteral",
       "offset": 31358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Sync.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Sync.swift",
       "kind": "BooleanLiteral",
       "offset": 48282,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Sync.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Sync.swift",
       "kind": "BooleanLiteral",
       "offset": 52119,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Sync.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Sync.swift",
       "kind": "BooleanLiteral",
       "offset": 52303,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/SyncSubscription.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/SyncSubscription.swift",
       "kind": "IntegerLiteral",
       "offset": 18275,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts\/realm-swift\/RealmSwift\/Util.swift",
+      "filePath": "\/Users\/afsar\/Downloads\/Temp-realm\/Carthage\/Checkouts copy\/realm-swift\/RealmSwift\/Util.swift",
       "kind": "StringLiteral",
       "offset": 1894,
       "length": 7,

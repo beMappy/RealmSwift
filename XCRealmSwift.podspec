@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name                      = 'XCRealmSwift'
-  version                     = '10.39.1-d'
+  version                     = '10.39.1-d2'
   s.version                   = version
   s.summary                   = 'Realm Swift is a modern data framework & database for iOS, macOS, tvOS & watchOS.'
   s.description               = <<-DESC
