@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name                      = 'XCRealmSwift'
-  version                     = '10.39.1-d2'
+  version                     = '10.39.1-d3'
   s.version                   = version
   s.summary                   = 'Realm Swift is a modern data framework & database for iOS, macOS, tvOS & watchOS.'
   s.description               = <<-DESC
@@ -16,8 +16,7 @@ Pod::Spec.new do |s|
   s.social_media_url          = 'https://twitter.com/realm'
   s.documentation_url         = "https://docs.mongodb.com/realm/sdk/swift"
   s.license                   = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  s.ios.deployment_target     = '9.0'
-  s.osx.deployment_target     = '10.9'
+  s.ios.deployment_target     = '11.0'
   s.swift_version             = '5'
 
   s.vendored_frameworks       = 'RealmSwift.xcframework'

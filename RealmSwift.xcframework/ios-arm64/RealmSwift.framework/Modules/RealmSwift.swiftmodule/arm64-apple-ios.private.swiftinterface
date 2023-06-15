@@ -678,7 +678,7 @@ public func changesetPublisher<T>(_ projection: T, keyPaths: [Swift.String]? = n
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 public func changesetPublisher<T>(_ collection: T, keyPaths: [Swift.String]? = nil) -> RealmSwift.RealmPublishers.CollectionChangeset<T> where T : RealmSwift.RealmCollection
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   public var objectWillChange: RealmSwift.RealmPublishers.RealmWillChange {
     get
   }
@@ -787,7 +787,7 @@ extension RealmSwift.RealmKeyedCollection {
 }
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 @frozen public struct AsyncOpenSubscription : Combine.Subscription {
-  private let task: RealmSwift.Realm.AsyncOpenTask
+  private let task: RealmSwift.RealmSwt.AsyncOpenTask
   public var combineIdentifier: Combine.CombineIdentifier {
     get
   }
@@ -798,18 +798,18 @@ extension RealmSwift.RealmKeyedCollection {
 public enum RealmPublishers {
   @frozen public struct AsyncOpenPublisher : Combine.Publisher {
     public typealias Failure = Swift.Error
-    public typealias Output = RealmSwift.Realm
-    private let configuration: RealmSwift.Realm.Configuration
+    public typealias Output = RealmSwift.RealmSwt
+    private let configuration: RealmSwift.RealmSwt.Configuration
     private let callbackQueue: Dispatch.DispatchQueue
     private let onProgressNotificationCallback: ((RealmSwift.SyncSession.Progress) -> Swift.Void)?
     public func onProgressNotification(_ onProgressNotificationCallback: @escaping ((RealmSwift.SyncSession.Progress) -> Swift.Void)) -> RealmSwift.RealmPublishers.AsyncOpenPublisher
-    public func receive<S>(subscriber: S) where S : Combine.Subscriber, S.Failure == Swift.Error, S.Input == RealmSwift.Realm
+    public func receive<S>(subscriber: S) where S : Combine.Subscriber, S.Failure == Swift.Error, S.Input == RealmSwift.RealmSwt
     public func receive<S>(on scheduler: S) -> RealmSwift.RealmPublishers.AsyncOpenPublisher where S : Combine.Scheduler
   }
   @frozen public struct RealmWillChange : Combine.Publisher {
     public typealias Failure = Swift.Never
     public typealias Output = Swift.Void
-    private let realm: RealmSwift.Realm
+    private let realm: RealmSwift.RealmSwt
     public func saveToken<T>(on object: T, for keyPath: Swift.WritableKeyPath<T, RealmSwift.NotificationToken?>) -> RealmSwift.RealmPublishers.RealmWillChangeWithToken<T>
     public func receive<S>(subscriber: S) where S : Combine.Subscriber, S.Failure == Swift.Never, S.Input == ()
   }
@@ -1320,7 +1320,7 @@ public typealias EmbeddedObject = Realm.RealmSwiftEmbeddedObject
 extension Realm.RealmSwiftEmbeddedObject : RealmSwift._RealmCollectionValueInsideOptional {
   @objc override final public class func isEmbedded() -> Swift.Bool
   convenience public init(value: Any)
-  public var realm: RealmSwift.Realm? {
+  public var realm: RealmSwift.RealmSwt? {
     get
   }
   public var objectSchema: RealmSwift.ObjectSchema {
@@ -1352,11 +1352,11 @@ extension Realm.RealmSwiftEmbeddedObject : RealmSwift.ThreadConfined {
   public func freeze() -> Self
   public func thaw() -> Self?
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   public typealias Error = Realm.RLMError
 }
 extension Realm.RLMError {
-  public static let callFailed: RealmSwift.Realm.Error
+  public static let callFailed: RealmSwift.RealmSwt.Error
   public var fileURL: Foundation.URL? {
     get
   }
@@ -1389,7 +1389,7 @@ extension RealmSwift.Events {
   public func endScope() -> Combine.Future<Swift.Void, Swift.Error>
   @_disfavoredOverload public func recordEvent(activity: Swift.String, eventType: Swift.String? = nil, data: Swift.String? = nil) -> Combine.Future<Swift.Void, Swift.Error>
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   public var events: RealmSwift.Events? {
     get
   }
@@ -1486,7 +1486,7 @@ public protocol _MapKey : RealmSwift._ObjcBridgeable, Swift.Hashable {
 extension Swift.String : RealmSwift._MapKey {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Map<Key, Value> : Realm.RLMSwiftCollectionBase where Key : RealmSwift._MapKey, Value : RealmSwift.RealmCollectionValue {
-  final public var realm: RealmSwift.Realm? {
+  final public var realm: RealmSwift.RealmSwt? {
     get
   }
   final public var isInvalidated: Swift.Bool {
@@ -1582,8 +1582,8 @@ public typealias MigrationBlock = @Sendable (_ migration: RealmSwift.Migration, 
 public typealias MigrationObject = RealmSwift.DynamicObject
 public typealias MigrationObjectEnumerateBlock = (_ oldObject: RealmSwift.MigrationObject?, _ newObject: RealmSwift.MigrationObject?) -> Swift.Void
 public func schemaVersionAtURL(_ fileURL: Foundation.URL, encryptionKey: Foundation.Data? = nil) throws -> Swift.UInt64
-extension RealmSwift.Realm {
-  public static func performMigration(for configuration: RealmSwift.Realm.Configuration = Realm.Configuration.defaultConfiguration) throws
+extension RealmSwift.RealmSwt {
+  public static func performMigration(for configuration: RealmSwift.RealmSwt.Configuration = RealmSwt.Configuration.defaultConfiguration) throws
 }
 public typealias Migration = Realm.RLMMigration
 extension Realm.RLMMigration {
@@ -1986,7 +1986,7 @@ extension Foundation.NSNumber : RealmSwift._PossiblyAggregateable {
 public typealias Object = Realm.RealmSwiftObject
 extension Realm.RealmSwiftObject : RealmSwift._RealmCollectionValueInsideOptional {
   convenience public init(value: Any)
-  public var realm: RealmSwift.Realm? {
+  public var realm: RealmSwift.RealmSwt? {
     get
   }
   public var objectSchema: RealmSwift.ObjectSchema {
@@ -2107,16 +2107,16 @@ extension RealmSwift.ObjectiveCSupport {
   public static func convert<Key>(object: Realm.RLMDictionary<Swift.AnyObject, Swift.AnyObject>) -> RealmSwift.Map<Key, RealmSwift.Object> where Key : RealmSwift._MapKey
   public static func convert<T>(object: RealmSwift.LinkingObjects<T>) -> Realm.RLMResults<Swift.AnyObject> where T : Realm.RLMObjectBase, T : RealmSwift.RealmCollectionValue
   public static func convert(object: Realm.RLMLinkingObjects<Realm.RLMObject>) -> RealmSwift.Results<RealmSwift.Object>
-  public static func convert(object: RealmSwift.Realm) -> Realm.RLMRealm
-  public static func convert(object: Realm.RLMRealm) -> RealmSwift.Realm
+  public static func convert(object: RealmSwift.RealmSwt) -> Realm.RLMRealm
+  public static func convert(object: Realm.RLMRealm) -> RealmSwift.RealmSwt
   @available(*, deprecated, message: "This function is now redundant")
   public static func convert(object: RealmSwift.Migration) -> Realm.RLMMigration
   public static func convert(object: RealmSwift.ObjectSchema) -> Realm.RLMObjectSchema
   public static func convert(object: Realm.RLMObjectSchema) -> RealmSwift.ObjectSchema
   public static func convert(object: RealmSwift.Property) -> Realm.RLMProperty
   public static func convert(object: Realm.RLMProperty) -> RealmSwift.Property
-  public static func convert(object: RealmSwift.Realm.Configuration) -> Realm.RLMRealmConfiguration
-  public static func convert(object: Realm.RLMRealmConfiguration) -> RealmSwift.Realm.Configuration
+  public static func convert(object: RealmSwift.RealmSwt.Configuration) -> Realm.RLMRealmConfiguration
+  public static func convert(object: Realm.RLMRealmConfiguration) -> RealmSwift.RealmSwt.Configuration
   public static func convert(object: RealmSwift.Schema) -> Realm.RLMSchema
   public static func convert(object: Realm.RLMSchema) -> RealmSwift.Schema
   public static func convert(object: RealmSwift.SortDescriptor) -> Realm.RLMSortDescriptor
@@ -2128,16 +2128,16 @@ extension RealmSwift.ObjectiveCSupport {
   @preconcurrency public static func convert(object: @escaping @Sendable (Swift.Int, Swift.Int) -> Swift.Bool) -> Realm.RLMShouldCompactOnLaunchBlock
   #endif
   #if compiler(>=5.3) && $Sendable
-  @preconcurrency public static func convert(object: (@Sendable (RealmSwift.Realm) -> Swift.Void)?) -> Realm.RLMClientResetBeforeBlock?
+  @preconcurrency public static func convert(object: (@Sendable (RealmSwift.RealmSwt) -> Swift.Void)?) -> Realm.RLMClientResetBeforeBlock?
   #endif
   #if compiler(>=5.3) && $Sendable
-  @preconcurrency public static func convert(object: Realm.RLMClientResetBeforeBlock?) -> (@Sendable (RealmSwift.Realm) -> Swift.Void)?
+  @preconcurrency public static func convert(object: Realm.RLMClientResetBeforeBlock?) -> (@Sendable (RealmSwift.RealmSwt) -> Swift.Void)?
   #endif
   #if compiler(>=5.3) && $Sendable
-  @preconcurrency public static func convert(object: (@Sendable (RealmSwift.Realm, RealmSwift.Realm) -> Swift.Void)?) -> Realm.RLMClientResetAfterBlock?
+  @preconcurrency public static func convert(object: (@Sendable (RealmSwift.RealmSwt, RealmSwift.RealmSwt) -> Swift.Void)?) -> Realm.RLMClientResetAfterBlock?
   #endif
   #if compiler(>=5.3) && $Sendable
-  @preconcurrency public static func convert(object: Realm.RLMClientResetAfterBlock?) -> (@Sendable (RealmSwift.Realm, RealmSwift.Realm) -> Swift.Void)?
+  @preconcurrency public static func convert(object: Realm.RLMClientResetAfterBlock?) -> (@Sendable (RealmSwift.RealmSwt, RealmSwift.RealmSwt) -> Swift.Void)?
   #endif
   #if compiler(>=5.3) && $Sendable
   @preconcurrency public static func convert(block: @escaping @Sendable (RealmSwift.SyncSubscriptionSet) -> Swift.Void) -> Realm.RLMFlexibleSyncInitialSubscriptionsBlock
@@ -2367,7 +2367,7 @@ extension RealmSwift.Projection {
   public func removeObserver(_ observer: ObjectiveC.NSObject, forKeyPath keyPath: Swift.String)
 }
 extension RealmSwift.Projection : RealmSwift.ThreadConfined {
-  public var realm: RealmSwift.Realm? {
+  public var realm: RealmSwift.RealmSwt? {
     get
   }
   public var isInvalidated: Swift.Bool {
@@ -2689,23 +2689,23 @@ extension Foundation.Data : RealmSwift._QueryBinary {
 extension Swift.Optional : RealmSwift._QueryBinary where Wrapped : RealmSwift._Persistable, Wrapped.PersistedType : RealmSwift._QueryBinary {
 }
 public typealias AsyncTransactionId = Realm.RLMAsyncTransactionId
-@frozen public struct Realm {
+@frozen public struct RealmSwt {
   public var schema: RealmSwift.Schema {
     get
   }
-  public var configuration: RealmSwift.Realm.Configuration {
+  public var configuration: RealmSwift.RealmSwt.Configuration {
     get
   }
   public var isEmpty: Swift.Bool {
     get
   }
   public init(queue: Dispatch.DispatchQueue? = nil) throws
-  public init(configuration: RealmSwift.Realm.Configuration, queue: Dispatch.DispatchQueue? = nil) throws
+  public init(configuration: RealmSwift.RealmSwt.Configuration, queue: Dispatch.DispatchQueue? = nil) throws
   public init(fileURL: Foundation.URL) throws
   @discardableResult
-  public static func asyncOpen(configuration: RealmSwift.Realm.Configuration = .defaultConfiguration, callbackQueue: Dispatch.DispatchQueue = .main, callback: @escaping (Swift.Result<RealmSwift.Realm, Swift.Error>) -> Swift.Void) -> RealmSwift.Realm.AsyncOpenTask
+  public static func asyncOpen(configuration: RealmSwift.RealmSwt.Configuration = .defaultConfiguration, callbackQueue: Dispatch.DispatchQueue = .main, callback: @escaping (Swift.Result<RealmSwift.RealmSwt, Swift.Error>) -> Swift.Void) -> RealmSwift.RealmSwt.AsyncOpenTask
   @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-  public static func asyncOpen(configuration: RealmSwift.Realm.Configuration = .defaultConfiguration) -> RealmSwift.RealmPublishers.AsyncOpenPublisher
+  public static func asyncOpen(configuration: RealmSwift.RealmSwt.Configuration = .defaultConfiguration) -> RealmSwift.RealmPublishers.AsyncOpenPublisher
   @frozen public struct AsyncOpenTask {
     internal let rlmTask: Realm.RLMAsyncOpenTask
     public func cancel()
@@ -2741,14 +2741,14 @@ public typealias AsyncTransactionId = Realm.RLMAsyncTransactionId
   }
   @available(*, unavailable, message: "Pass .error, .modified or .all rather than a boolean. .error is equivalent to false and .all is equivalent to true.")
   public func add(_ object: RealmSwift.Object, update: Swift.Bool)
-  public func add(_ object: RealmSwift.Object, update: RealmSwift.Realm.UpdatePolicy = .error)
+  public func add(_ object: RealmSwift.Object, update: RealmSwift.RealmSwt.UpdatePolicy = .error)
   @available(*, unavailable, message: "Pass .error, .modified or .all rather than a boolean. .error is equivalent to false and .all is equivalent to true.")
   public func add<S>(_ objects: S, update: Swift.Bool) where S : Swift.Sequence, S.Element : Realm.RealmSwiftObject
-  public func add<S>(_ objects: S, update: RealmSwift.Realm.UpdatePolicy = .error) where S : Swift.Sequence, S.Element : Realm.RealmSwiftObject
+  public func add<S>(_ objects: S, update: RealmSwift.RealmSwt.UpdatePolicy = .error) where S : Swift.Sequence, S.Element : Realm.RealmSwiftObject
   @discardableResult
-  public func create<T>(_ type: T.Type, value: Any = [String: Any](), update: RealmSwift.Realm.UpdatePolicy = .error) -> T where T : Realm.RealmSwiftObject
+  public func create<T>(_ type: T.Type, value: Any = [String: Any](), update: RealmSwift.RealmSwt.UpdatePolicy = .error) -> T where T : Realm.RealmSwiftObject
   @discardableResult
-  public func dynamicCreate(_ typeName: Swift.String, value: Any = [String: Any](), update: RealmSwift.Realm.UpdatePolicy = .error) -> RealmSwift.DynamicObject
+  public func dynamicCreate(_ typeName: Swift.String, value: Any = [String: Any](), update: RealmSwift.RealmSwt.UpdatePolicy = .error) -> RealmSwift.DynamicObject
   public func delete(_ object: RealmSwift.ObjectBase)
   public func delete<S>(_ objects: S) where S : Swift.Sequence, S.Element : Realm.RLMObjectBase
   public func delete<Element>(_ objects: RealmSwift.List<Element>) where Element : Realm.RLMObjectBase, Element : RealmSwift.RealmCollectionValue
@@ -2769,31 +2769,31 @@ public typealias AsyncTransactionId = Realm.RLMAsyncTransactionId
   public var isFrozen: Swift.Bool {
     get
   }
-  public func freeze() -> RealmSwift.Realm
-  public func thaw() -> RealmSwift.Realm
+  public func freeze() -> RealmSwift.RealmSwt
+  public func thaw() -> RealmSwift.RealmSwt
   public func freeze<T>(_ obj: T) -> T where T : Realm.RLMObjectBase
   public func thaw<T>(_ obj: T) -> T? where T : Realm.RLMObjectBase
   public func freeze<Collection>(_ collection: Collection) -> Collection where Collection : RealmSwift.RealmCollection
   public func invalidate()
   public func writeCopy(toFile fileURL: Foundation.URL, encryptionKey: Foundation.Data? = nil) throws
-  public func writeCopy(configuration: RealmSwift.Realm.Configuration) throws
-  public static func fileExists(for config: RealmSwift.Realm.Configuration) -> Swift.Bool
-  public static func deleteFiles(for config: RealmSwift.Realm.Configuration) throws -> Swift.Bool
+  public func writeCopy(configuration: RealmSwift.RealmSwt.Configuration) throws
+  public static func fileExists(for config: RealmSwift.RealmSwt.Configuration) -> Swift.Bool
+  public static func deleteFiles(for config: RealmSwift.RealmSwt.Configuration) throws -> Swift.Bool
   internal var rlmRealm: Realm.RLMRealm
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   @available(*, message: "This feature is currently in beta.")
   public var subscriptions: RealmSwift.SyncSubscriptionSet {
     get
   }
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   public func create<T>(_ type: T.Type, value: Any = [String: Any]()) where T : Realm.RealmSwiftAsymmetricObject
 }
-extension RealmSwift.Realm : Swift.Equatable {
-  public static func == (lhs: RealmSwift.Realm, rhs: RealmSwift.Realm) -> Swift.Bool
+extension RealmSwift.RealmSwt : Swift.Equatable {
+  public static func == (lhs: RealmSwift.RealmSwt, rhs: RealmSwift.RealmSwt) -> Swift.Bool
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   @frozen public enum Notification : Swift.String {
     case didChange
     case refreshRequired
@@ -2804,21 +2804,21 @@ extension RealmSwift.Realm {
     }
   }
 }
-public typealias NotificationBlock = (_ notification: RealmSwift.Realm.Notification, _ realm: RealmSwift.Realm) -> Swift.Void
+public typealias NotificationBlock = (_ notification: RealmSwift.RealmSwt.Notification, _ realm: RealmSwift.RealmSwt) -> Swift.Void
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   @frozen public enum OpenBehavior : Swift.Sendable {
     case never
     case always
     case once
-    public static func == (a: RealmSwift.Realm.OpenBehavior, b: RealmSwift.Realm.OpenBehavior) -> Swift.Bool
+    public static func == (a: RealmSwift.RealmSwt.OpenBehavior, b: RealmSwift.RealmSwt.OpenBehavior) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor public init(configuration: RealmSwift.Realm.Configuration = .defaultConfiguration, downloadBeforeOpen: RealmSwift.Realm.OpenBehavior = .never) async throws
+  @_Concurrency.MainActor public init(configuration: RealmSwift.RealmSwt.Configuration = .defaultConfiguration, downloadBeforeOpen: RealmSwift.RealmSwt.OpenBehavior = .never) async throws
   #endif
 }
 public protocol RealmFetchable : RealmSwift.RealmCollectionValue {
@@ -2896,7 +2896,7 @@ public protocol RealmCollectionBase : RealmSwift.ThreadConfined, Swift.CustomStr
   typealias ElementType = Self.Element
 }
 public protocol RealmCollection : RealmSwift.RealmCollectionBase, Swift.Equatable where Self.Iterator == RealmSwift.RLMIterator<Self.Element> {
-  var realm: RealmSwift.Realm? { get }
+  var realm: RealmSwift.RealmSwt? { get }
   var isInvalidated: Swift.Bool { get }
   var count: Swift.Int { get }
   var description: Swift.String { get }
@@ -3019,7 +3019,7 @@ public struct ProjectedCollection<Element> : Swift.RandomAccessCollection, Swift
   public var endIndex: Swift.Int {
     get
   }
-  public var realm: RealmSwift.Realm? {
+  public var realm: RealmSwift.RealmSwt? {
     get
   }
   public var isInvalidated: Swift.Bool {
@@ -3060,9 +3060,9 @@ public protocol OptionalProtocol {
 extension Swift.Optional : RealmSwift.OptionalProtocol {
   public func _rlmInferWrappedType() -> Wrapped
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   @frozen public struct Configuration : Swift.Sendable {
-    public static var defaultConfiguration: RealmSwift.Realm.Configuration {
+    public static var defaultConfiguration: RealmSwift.RealmSwt.Configuration {
       get
       set
     }
@@ -3106,18 +3106,18 @@ extension RealmSwift.Realm {
     internal var rerunOnOpen: Swift.Bool = false
   }
 }
-extension RealmSwift.Realm.Configuration : Swift.CustomStringConvertible {
+extension RealmSwift.RealmSwt.Configuration : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension RealmSwift.Realm.Configuration : Swift.Equatable {
-  public static func == (lhs: RealmSwift.Realm.Configuration, rhs: RealmSwift.Realm.Configuration) -> Swift.Bool
+extension RealmSwift.RealmSwt.Configuration : Swift.Equatable {
+  public static func == (lhs: RealmSwift.RealmSwt.Configuration, rhs: RealmSwift.RealmSwt.Configuration) -> Swift.Bool
 }
 public protocol RealmKeyedCollection : RealmSwift.ThreadConfined, Swift.CustomStringConvertible, Swift.Sequence {
   associatedtype Key : RealmSwift._MapKey
   associatedtype Value : RealmSwift.RealmCollectionValue
-  var realm: RealmSwift.Realm? { get }
+  var realm: RealmSwift.RealmSwt? { get }
   var isInvalidated: Swift.Bool { get }
   var count: Swift.Int { get }
   var description: Swift.String { get }
@@ -3373,7 +3373,7 @@ public protocol _RealmSchemaDiscoverable {
   static func _rlmPopulateProperty(_ prop: Realm.RLMProperty)
 }
 public protocol RealmSectionedResult : RealmSwift.ThreadConfined, Swift.Equatable, Swift.RandomAccessCollection {
-  var realm: RealmSwift.Realm? { get }
+  var realm: RealmSwift.RealmSwt? { get }
   var isInvalidated: Swift.Bool { get }
   var count: Swift.Int { get }
   var isFrozen: Swift.Bool { get }
@@ -3534,10 +3534,10 @@ extension RealmSwift.Projection : RealmSwift._ObservedResultsValue {
   @_Concurrency.MainActor(unsafe) public var projectedValue: RealmSwift.ObservedResults<ResultType> {
     get
   }
-  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, configuration: RealmSwift.Realm.Configuration? = nil, filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, configuration: RealmSwift.Realm.Configuration? = nil, filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, configuration: RealmSwift.Realm.Configuration? = nil, where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, configuration: RealmSwift.RealmSwt.Configuration? = nil, filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, configuration: RealmSwift.RealmSwt.Configuration? = nil, filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, configuration: RealmSwift.RealmSwt.Configuration? = nil, where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil, sortDescriptor: RealmSwift.SortDescriptor? = nil) where ResultType : Realm.RealmSwiftObject
   nonisolated public func update()
   public typealias Value = RealmSwift.Results<ResultType>
 }
@@ -3574,14 +3574,14 @@ extension RealmSwift.Projection : RealmSwift._ObservedResultsValue {
   @_Concurrency.MainActor(unsafe) public var projectedValue: RealmSwift.ObservedSectionedResults<Key, ResultType> {
     get
   }
-  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
-  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
-  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor], keyPaths: [Swift.String]? = nil, configuration: RealmSwift.Realm.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
+  @_Concurrency.MainActor(unsafe) public init<ObjectType>(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : RealmSwift.Projection<ObjectType>, ObjectType : Realm.RLMObjectBase, ObjectType : RealmSwift.RealmCollectionValue, ObjectType : RealmSwift.ThreadConfined
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], filter: Foundation.NSPredicate? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor] = [], where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], where: ((RealmSwift.Query<ResultType>) -> RealmSwift.Query<Swift.Bool>)? = nil, keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionKeyPath: Swift.KeyPath<ResultType, Key>, sortDescriptors: [RealmSwift.SortDescriptor] = [], keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
+  @_Concurrency.MainActor(unsafe) public init(_ type: ResultType.Type, sectionBlock: @escaping ((ResultType) -> Key), sortDescriptors: [RealmSwift.SortDescriptor], keyPaths: [Swift.String]? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil) where ResultType : Realm.RealmSwiftObject
   nonisolated public func update()
   public typealias Value = RealmSwift.SectionedResults<Key, ResultType>
 }
@@ -3717,11 +3717,11 @@ extension RealmSwift.ThreadConfined where Self : Realm.RLMObjectBase {
 }
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension SwiftUI.EnvironmentValues {
-  public var realmConfiguration: RealmSwift.Realm.Configuration {
+  public var realmConfiguration: RealmSwift.RealmSwt.Configuration {
     get
     set
   }
-  public var realm: RealmSwift.Realm {
+  public var realm: RealmSwift.RealmSwt {
     get
     set
   }
@@ -3733,7 +3733,7 @@ extension SwiftUI.EnvironmentValues {
 public enum AsyncOpenState {
   case connecting
   case waitingForUser
-  case open(RealmSwift.Realm)
+  case open(RealmSwift.RealmSwt)
   case progress(Foundation.Progress)
   case error(Swift.Error)
 }
@@ -3746,8 +3746,8 @@ public enum AsyncOpenState {
     get
   }
   @_Concurrency.MainActor(unsafe) public func cancel()
-  @_Concurrency.MainActor(unsafe) public init<Partition>(appId: Swift.String? = nil, partitionValue: Partition, configuration: RealmSwift.Realm.Configuration? = nil, timeout: Swift.UInt? = nil) where Partition : RealmSwift.BSON
-  @_Concurrency.MainActor(unsafe) public init(appId: Swift.String? = nil, configuration: RealmSwift.Realm.Configuration? = nil, timeout: Swift.UInt? = nil)
+  @_Concurrency.MainActor(unsafe) public init<Partition>(appId: Swift.String? = nil, partitionValue: Partition, configuration: RealmSwift.RealmSwt.Configuration? = nil, timeout: Swift.UInt? = nil) where Partition : RealmSwift.BSON
+  @_Concurrency.MainActor(unsafe) public init(appId: Swift.String? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil, timeout: Swift.UInt? = nil)
   nonisolated public func update()
 }
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
@@ -3759,8 +3759,8 @@ public enum AsyncOpenState {
     get
   }
   @_Concurrency.MainActor(unsafe) public func cancel()
-  @_Concurrency.MainActor(unsafe) public init<Partition>(appId: Swift.String? = nil, partitionValue: Partition, configuration: RealmSwift.Realm.Configuration? = nil, timeout: Swift.UInt? = nil) where Partition : RealmSwift.BSON
-  @_Concurrency.MainActor(unsafe) public init(appId: Swift.String? = nil, configuration: RealmSwift.Realm.Configuration? = nil, timeout: Swift.UInt? = nil)
+  @_Concurrency.MainActor(unsafe) public init<Partition>(appId: Swift.String? = nil, partitionValue: Partition, configuration: RealmSwift.RealmSwt.Configuration? = nil, timeout: Swift.UInt? = nil) where Partition : RealmSwift.BSON
+  @_Concurrency.MainActor(unsafe) public init(appId: Swift.String? = nil, configuration: RealmSwift.RealmSwt.Configuration? = nil, timeout: Swift.UInt? = nil)
   nonisolated public func update()
 }
 @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -3833,10 +3833,10 @@ public typealias SyncLogLevel = Realm.RLMSyncLogLevel
 public typealias Provider = Realm.RLMIdentityProvider
 @frozen public enum ClientResetMode {
   @available(*, deprecated, message: "Use discardUnsyncedChanges")
-  @preconcurrency case discardLocal(beforeReset: (@Sendable (_ before: RealmSwift.Realm) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.Realm, _ after: RealmSwift.Realm) -> Swift.Void)? = nil)
-  @preconcurrency case discardUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.Realm) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.Realm, _ after: RealmSwift.Realm) -> Swift.Void)? = nil)
-  @preconcurrency case recoverUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.Realm) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.Realm, _ after: RealmSwift.Realm) -> Swift.Void)? = nil)
-  @preconcurrency case recoverOrDiscardUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.Realm) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.Realm, _ after: RealmSwift.Realm) -> Swift.Void)? = nil)
+  @preconcurrency case discardLocal(beforeReset: (@Sendable (_ before: RealmSwift.RealmSwt) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.RealmSwt, _ after: RealmSwift.RealmSwt) -> Swift.Void)? = nil)
+  @preconcurrency case discardUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.RealmSwt) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.RealmSwt, _ after: RealmSwift.RealmSwt) -> Swift.Void)? = nil)
+  @preconcurrency case recoverUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.RealmSwt) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.RealmSwt, _ after: RealmSwift.RealmSwt) -> Swift.Void)? = nil)
+  @preconcurrency case recoverOrDiscardUnsyncedChanges(beforeReset: (@Sendable (_ before: RealmSwift.RealmSwt) -> Swift.Void)? = nil, afterReset: (@Sendable (_ before: RealmSwift.RealmSwt, _ after: RealmSwift.RealmSwt) -> Swift.Void)? = nil)
   @preconcurrency case manual(errorHandler: RealmSwift.ErrorReportingBlock? = nil)
 }
 @frozen public struct SyncConfiguration : Swift.Sendable {
@@ -3887,8 +3887,8 @@ public typealias Provider = Realm.RLMIdentityProvider
   @preconcurrency public func dynamicallyCall(withArguments args: [[RealmSwift.AnyBSON]]) -> Combine.Future<RealmSwift.AnyBSON, Swift.Error>
 }
 extension Realm.RLMUser {
-  @preconcurrency public func configuration<T>(partitionValue: T, clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(beforeReset: nil, afterReset: nil), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.Realm.Configuration where T : RealmSwift.BSON
-  @preconcurrency public func configuration(partitionValue: RealmSwift.AnyBSON, clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(beforeReset: nil, afterReset: nil), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.Realm.Configuration
+  @preconcurrency public func configuration<T>(partitionValue: T, clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(beforeReset: nil, afterReset: nil), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.RealmSwt.Configuration where T : RealmSwift.BSON
+  @preconcurrency public func configuration(partitionValue: RealmSwift.AnyBSON, clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(beforeReset: nil, afterReset: nil), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.RealmSwt.Configuration
   public var customData: RealmSwift.Document {
     get
   }
@@ -3933,7 +3933,7 @@ extension Realm.RLMSyncSession {
   @preconcurrency public func addProgressNotification(for direction: Realm.RLMSyncSession.ProgressDirection, mode: Realm.RLMSyncSession.ProgressMode, block: @escaping @Sendable (Realm.RLMSyncSession.Progress) -> Swift.Void) -> Realm.RLMSyncSession.ProgressNotificationToken?
   #endif
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   @available(*, unavailable, message: "Use Results.subscribe()")
   public func subscribe<T>(to objects: T.Type, where: Swift.String, completion: @escaping (RealmSwift.Results<T>?, Swift.Error?) -> Swift.Void) where T : Realm.RealmSwiftObject
   public var syncSession: RealmSwift.SyncSession? {
@@ -3982,9 +3982,9 @@ extension RealmSwift.FunctionCallable {
   #endif
 }
 extension Realm.RLMUser {
-  public func flexibleSyncConfiguration(clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.Realm.Configuration
+  public func flexibleSyncConfiguration(clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false) -> RealmSwift.RealmSwt.Configuration
   #if compiler(>=5.3) && $Sendable
-  @preconcurrency public func flexibleSyncConfiguration(clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false, initialSubscriptions: @escaping @Sendable (RealmSwift.SyncSubscriptionSet) -> Swift.Void, rerunOnOpen: Swift.Bool = false) -> RealmSwift.Realm.Configuration
+  @preconcurrency public func flexibleSyncConfiguration(clientResetMode: RealmSwift.ClientResetMode = .recoverUnsyncedChanges(), cancelAsyncOpenOnNonFatalErrors: Swift.Bool = false, initialSubscriptions: @escaping @Sendable (RealmSwift.SyncSubscriptionSet) -> Swift.Void, rerunOnOpen: Swift.Bool = false) -> RealmSwift.RealmSwt.Configuration
   #endif
 }
 @frozen public enum SyncSubscriptionState : Swift.Equatable {
@@ -4085,7 +4085,7 @@ extension RealmSwift.SyncSubscriptionSet {
   public func updateSubscriptions(_ block: @escaping (() -> Swift.Void)) -> Combine.Future<Swift.Void, Swift.Error>
 }
 public protocol ThreadConfined {
-  var realm: RealmSwift.Realm? { get }
+  var realm: RealmSwift.RealmSwt? { get }
   var isInvalidated: Swift.Bool { get }
   var isFrozen: Swift.Bool { get }
   func freeze() -> Self
@@ -4106,7 +4106,7 @@ public protocol ThreadConfined {
   public init(wrappedValue: T?)
   @objc deinit
 }
-extension RealmSwift.Realm {
+extension RealmSwift.RealmSwt {
   public func resolve<Confined>(_ reference: RealmSwift.ThreadSafeReference<Confined>) -> Confined? where Confined : RealmSwift.ThreadConfined
 }
 extension RealmSwift.ThreadSafeReference : Swift.Sendable {
@@ -4168,19 +4168,19 @@ extension RealmSwift.ObjectiveCSupport : Swift.Sendable {}
 extension RealmSwift.ObjectSchema : Swift.Sendable {}
 extension RealmSwift.Persisted : RealmSwift._RealmSchemaDiscoverable {}
 extension RealmSwift.Property : Swift.Sendable {}
-extension RealmSwift.Realm.AsyncOpenTask : Swift.Sendable {}
-extension RealmSwift.Realm.UpdatePolicy : Swift.Equatable {}
-extension RealmSwift.Realm.UpdatePolicy : Swift.Hashable {}
-extension RealmSwift.Realm.UpdatePolicy : Swift.RawRepresentable {}
-extension RealmSwift.Realm.UpdatePolicy : Swift.Sendable {}
-extension RealmSwift.Realm.Notification : Swift.Equatable {}
-extension RealmSwift.Realm.Notification : Swift.Hashable {}
-extension RealmSwift.Realm.Notification : Swift.RawRepresentable {}
-extension RealmSwift.Realm.Notification : Swift.Sendable {}
+extension RealmSwift.RealmSwt.AsyncOpenTask : Swift.Sendable {}
+extension RealmSwift.RealmSwt.UpdatePolicy : Swift.Equatable {}
+extension RealmSwift.RealmSwt.UpdatePolicy : Swift.Hashable {}
+extension RealmSwift.RealmSwt.UpdatePolicy : Swift.RawRepresentable {}
+extension RealmSwift.RealmSwt.UpdatePolicy : Swift.Sendable {}
+extension RealmSwift.RealmSwt.Notification : Swift.Equatable {}
+extension RealmSwift.RealmSwt.Notification : Swift.Hashable {}
+extension RealmSwift.RealmSwt.Notification : Swift.RawRepresentable {}
+extension RealmSwift.RealmSwt.Notification : Swift.Sendable {}
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension RealmSwift.Realm.OpenBehavior : Swift.Equatable {}
+extension RealmSwift.RealmSwt.OpenBehavior : Swift.Equatable {}
 @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension RealmSwift.Realm.OpenBehavior : Swift.Hashable {}
+extension RealmSwift.RealmSwt.OpenBehavior : Swift.Hashable {}
 extension RealmSwift.Schema : Swift.Sendable {}
 extension RealmSwift.SortDescriptor : Swift.Sendable {}
 extension RealmSwift.ClientResetMode : Swift.Sendable {}
