@@ -13,7 +13,7 @@ let package = Package(
             targets: ["RealmSwiftWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/beMappy/Realm/", exact: "10.39.1-d3"),
+        .package(url: "https://github.com/beMappy/Realm/", exact: "10.39.1-SPM"),
     ],
     targets: [
         .target(
